@@ -16,7 +16,7 @@
 
   const LEVEL_EVERY_SCORE = 5;
   const GAP_SHRINK_PER_LEVEL = 5;
-  const FORGIVING_GROW_PER_LEVEL = 1;
+  const FORGIVING_GROW_PER_LEVEL = 0.2;
 
   const game = document.getElementById("game");
   const beeg = document.getElementById("beeg");
@@ -376,3 +376,4 @@
 
   init();
 })();
+
