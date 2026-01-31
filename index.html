@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Flying Beeg</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="top">
+      <h1 class="title">Flying Beeg <span class="emoji">🐳</span></h1>
+      <div class="subtitle">Tap / Click / Space to Jump</div>
+    </header>
+
+    <main class="center">
+      <div id="frame">
+        <div id="game">
+          <div id="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Best: <span id="best">0</span></div>
+            <div>Level: <span id="level">1</span></div>
+          </div>
+
+          <div id="startOverlay" class="overlay visible">
+            <div class="overlayCard">
+              <div class="bigText">Click / Tap to Start</div>
+              <div class="smallText">Space also works</div>
+            </div>
+          </div>
+
+          <div id="gameOverOverlay" class="overlay">
+            <div class="gameOverCard">
+              <div class="goTitle">Game Over</div>
+
+              <div class="lastRow">
+                <img id="lastSkinImg" alt="skin" />
+                <div class="lastInfo">
+                  <div><b>Last Score:</b> <span id="lastScore">0</span></div>
+                  <div class="muted"><b>Playing Skin:</b> <span id="playingSkinName">beeg.png</span></div>
+                </div>
+              </div>
+
+              <div class="btnRow">
+                <button id="restartBtn" class="btn">Restart</button>
+                <button id="skinsBtn" class="btn">Skins</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="skinsModal" class="modal">
+            <div class="modalBox">
+              <div class="modalHeader">
+                <div class="modalTitle">Choose Skin</div>
+                <button id="closeSkins" class="iconBtn" aria-label="Close">✕</button>
+              </div>
+
+              <div id="skinsGrid" class="skinsGrid"></div>
+
+              <div class="modalFooter">
+                <button id="doneSkins" class="btn">Done</button>
+              </div>
+            </div>
+          </div>
+
+          <img id="beeg" src="beeg.png" alt="beeg" draggable="false" />
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
