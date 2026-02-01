@@ -61,6 +61,7 @@
     "matteo.png",
     "ninja.png",
     "sca.png",
+    "van.png",
       "brat.png",
   "doby.png",
   "don.png",
@@ -68,7 +69,6 @@
   "mike.png",
   "mrbread.png",
   "nefarii.png",
-    "van.png",
     "wara.png",
     "xp.png",
     "yuppi.png"
@@ -383,5 +383,3 @@
 
   init();
 })();
-
-
