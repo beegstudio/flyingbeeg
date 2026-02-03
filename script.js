@@ -64,7 +64,7 @@
     "van.png",
       "brat.png",
   "doby.png",
-  "don.png",
+  "dan.png",
   "kazuto.png",
   "mike.png",
   "mrbread.png",
@@ -383,3 +383,4 @@
 
   init();
 })();
+
